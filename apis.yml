@@ -1,19 +1,43 @@
 aid: liftopia
-name: liftopia
-description: liftopia is a company surfaced as a portfolio company of slow-ventures and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: Liftopia
+description: Liftopia is a consumer marketplace for advance-purchase ski and snowboard lift tickets,
+  letting travelers browse and buy discounted day tickets and multi-day passes at hundreds of ski areas
+  across the United States, Canada, Europe, South America, Japan, Australia and New Zealand. The site
+  is organized by region, state and destination with dated availability and 1-8 day ticket search, and
+  carries an affiliate program for partners. Liftopia's engineering organization operates on GitHub as
+  Catalate Commerce, Inc., and the site footer points to Spotlio. As of this profile Liftopia publishes
+  no public developer portal, API documentation, OpenAPI definition or client SDKs.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://res.cloudinary.com/liftopia/image/upload/c_scale,q_auto:eco,w_900/v1630420235/production/hero_images/Liftopia_OG_Image.png
 url: https://raw.githubusercontent.com/api-evangelist/liftopia/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - slow-ventures
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: enriched-no-public-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Travel
+- Ecommerce
+- Marketplace
+- Ticketing
+- Skiing
+- Reservations
+- Recreation
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +46,41 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://liftopia.com
+  url: https://www.liftopia.com
+- type: SignUp
+  url: https://www.liftopia.com/auth/register/sign-up
+- type: Login
+  url: https://www.liftopia.com/auth/login
+- type: TermsOfService
+  url: https://www.liftopia.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.liftopia.com/privacy-statement
+- type: Support
+  url: https://www.liftopia.com/contact-us
+- type: HelpCenter
+  url: https://liftopia.zendesk.com/hc/en-us
+- type: GitHubOrganization
+  url: https://github.com/liftopia
+- type: PurchaseConditions
+  url: https://www.liftopia.com/purchase-conditions
+- type: Affiliate
+  url: https://www.liftopia.com/affiliate
+- type: Reviews
+  url: https://www.liftopia.com/reviews
+- type: Twitter
+  url: https://twitter.com/liftopia
+- type: Facebook
+  url: https://www.facebook.com/liftopia
+- type: Instagram
+  url: https://www.instagram.com/liftopia/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/liftopia-inc.
+- type: DomainSecurity
+  url: security/liftopia-domain-security.yml
+- type: LLMsTxt
+  url: llms/liftopia-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
