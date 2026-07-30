@@ -1,0 +1,54 @@
+# Liftopia
+
+> Liftopia is a consumer marketplace for advance-purchase ski and snowboard lift tickets. Travelers
+> search by region, state or destination and by date for 1-8 day tickets and passes at hundreds of ski
+> areas across the United States, Canada, Europe, South America, Japan, Australia and New Zealand.
+> Liftopia's engineering organization operates on GitHub as Catalate Commerce, Inc.
+
+## APIs
+
+Liftopia publishes no public API. There is no developer portal, no API documentation, no OpenAPI or
+other machine-readable definition, and no client SDKs on npm, PyPI, RubyGems or Packagist. The former
+partner onboarding host (gettingstarted.liftopia.com) no longer resolves to a working page. Any
+integration is a private, partner-negotiated arrangement.
+
+## Site
+
+- [Liftopia](https://www.liftopia.com): Search and buy discounted lift tickets in advance.
+- [Sign up](https://www.liftopia.com/auth/register/sign-up): Create a Liftopia account.
+- [Log in](https://www.liftopia.com/auth/login): Sign in to an existing account.
+- [Affiliate program](https://www.liftopia.com/affiliate): Partner/affiliate program for referrers.
+- [Reviews](https://www.liftopia.com/reviews): Customer reviews of ski areas and the service.
+
+## Support
+
+- [Contact us](https://www.liftopia.com/contact-us): Primary support contact form.
+- [Help center](https://liftopia.zendesk.com/hc/en-us): Zendesk-hosted knowledge base.
+
+## Policies
+
+- [Terms of use](https://www.liftopia.com/terms-of-use)
+- [Privacy statement](https://www.liftopia.com/privacy-statement)
+- [Purchase conditions](https://www.liftopia.com/purchase-conditions): Ticket purchase, validity and
+  refund conditions.
+
+## Code
+
+- [GitHub organization](https://github.com/liftopia): Public repositories are operations and
+  engineering tooling (Chef cookbooks, Docker base images, Hubot scripts, Ruby/JS style guides) plus
+  forks of open-source projects. No API client libraries are published.
+
+## Artifacts
+
+- [Domain security](security/liftopia-domain-security.yml): Probed TLS, HSTS, DNSSEC, CAA, SPF and
+  DMARC posture. www.liftopia.com serves TLS 1.3 with HSTS; the apex liftopia.com serves an expired
+  certificate.
+- [Well-known probe](well-known/liftopia-well-known.yml): Negative probe result across the
+  /.well-known/ discovery surface.
+
+## Notes
+
+- Canonical host is www.liftopia.com; the apex host liftopia.com presents a certificate that expired
+  2025-08-18.
+- No status page, changelog, versioning policy, deprecation policy, vulnerability disclosure program
+  or trust center was found.

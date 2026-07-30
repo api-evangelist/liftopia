@@ -1,0 +1,25 @@
+generated: '2026-07-19'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.liftopia.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec  7 23:59:59 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: liftopia.com
+  https: false
+  tls_cert_error: 'certificate verify failed: certificate has expired'
+  cert_subject: C=US, ST=California, L=Palo Alto, O=Liftopia, Inc., CN=*.liftopia.com
+  cert_expires: Aug 18 23:59:59 2025 GMT
+  hsts: null
+  note: apex host serves an expired certificate; www.liftopia.com is the canonical
+    reachable host
+domains:
+- domain: liftopia.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine
