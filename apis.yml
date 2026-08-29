@@ -7,6 +7,17 @@ description: Liftopia is a consumer marketplace for advance-purchase ski and sno
   carries an affiliate program for partners. Liftopia's engineering organization operates on GitHub as
   Catalate Commerce, Inc., and the site footer points to Spotlio. As of this profile Liftopia publishes
   no public developer portal, API documentation, OpenAPI definition or client SDKs.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
