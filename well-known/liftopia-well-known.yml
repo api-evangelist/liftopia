@@ -3,27 +3,34 @@ method: searched
 source: live probes of https://www.liftopia.com/.well-known/*
 host: https://www.liftopia.com
 result: none-found
-note: Every /.well-known/ discovery document probed returned 404. Liftopia publishes
-  no security.txt, no OIDC/OAuth discovery metadata, no API catalog and no AI plugin
-  manifest. No WellKnown or SecurityTxt pointer is wired in apis.yml because no
-  document was found. Recorded as a negative probe result, not an absence of probing.
-documents:
-- path: /.well-known/security.txt
-  status: 404
-- path: /.well-known/openid-configuration
-  status: 404
-- path: /.well-known/oauth-authorization-server
-  status: 404
-- path: /.well-known/api-catalog
-  status: 404
-- path: /.well-known/ai-plugin.json
-  status: 404
+note: Every /.well-known/ discovery document probed returned 404. Liftopia publishes no security.txt,
+  no OIDC/OAuth discovery metadata, no API catalog and no AI plugin manifest. No WellKnown or SecurityTxt
+  pointer is wired in apis.yml because no document was found. Recorded as a negative probe result, not
+  an absence of probing.
 related_probes:
 - path: /llms.txt
   status: 404
 - path: /robots.txt
   status: 200
-  note: present; declares a sitemap via an unrendered ERB template placeholder
-    ("<%= AppConfig.sitemap_s3_url %>") rather than a real URL
+  note: present; declares a sitemap via an unrendered ERB template placeholder ("<%= AppConfig.sitemap_s3_url
+    %>") rather than a real URL
 - path: /sitemap.xml
   status: 404
+hosts:
+- host: https://www.liftopia.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
