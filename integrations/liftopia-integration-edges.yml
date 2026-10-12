@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/liftopia/integrations
+- https://n8n.io/integrations/liftopia/
+- https://composio.dev/toolkits/liftopia
+- https://monid.ai/tools/liftopia
+checked:
+- https://composio.dev/toolkits/liftopia
+- https://monid.ai/tools/liftopia
+- https://n8n.io/integrations/liftopia/
+- https://zapier.com/apps/liftopia/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
